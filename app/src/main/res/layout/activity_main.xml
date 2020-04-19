@@ -6,35 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
+
     <EditText
         android:id="@+id/editText"
+        android:layout_width="700px"
         android:layout_height="wrap_content"
-        android:layout_width="500px"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="150px"
         android:inputType="text"
-        android:layout_margin="30px"
-        />
+        android:textSize="60px" />
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <RadioButton android:id="@+id/radio_1"
+        android:orientation="vertical"
+        android:layout_marginLeft="160px">
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alternativ 2" />
+
+        <RadioButton
+            android:id="@+id/radio_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="alternativ 1"
+            android:layout_marginTop="20px"/>
 
-            />
-        <RadioButton android:id="@+id/radio_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="alternativ 2"/>
     </RadioGroup>
 
     <Button
         android:id="@+id/mainButton"
-        android:text="KNAPP"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:text="KNAPP"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="50px"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>
